@@ -1,0 +1,42 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block 'main' %}
+
+<!-- Add Book Form Section -->
+<section class="book-form-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="book-form shadow-lg p-4 bg-white rounded">
+                    <h2 class="text-center mb-4">Add a New Book</h2>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Enter Book Title" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="author" class="form-label">Author</label>
+                            <input type="text" class="form-control" id="author" name="author" placeholder="Enter author name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="isbn" class="form-label">ISBN</label>
+                            <input type="text" class="form-control" id="isbn" name="isbn" placeholder="Enter ISBN number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="published_date" class="form-label">Published Date</label>
+                            <input type="date" class="form-control" id="published_date" placeholder="Enter publication date" name="published_date" required>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Add Book</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock 'main' %}

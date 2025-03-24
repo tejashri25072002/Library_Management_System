@@ -1,0 +1,308 @@
+/* Custom Styles */
+body {
+    padding-top: 56px; 
+    background-image: url('img1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important; 
+}
+
+img{
+    background-size:contain; 
+    background-position:center; 
+    background-repeat: no-repeat; 
+    background-attachment:fixed;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+/* Signup form CSS */
+
+.signup-section {
+    padding: 60px 0;
+}
+
+.signup-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.signup-form h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.signup-form .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.signup-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.signup-form .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.signup-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.signup-form a {
+    color: #007bff;
+}
+
+.signup-form a:hover {
+    text-decoration: underline;
+}
+
+
+.login-section {
+    padding: 60px 0;
+}
+
+.login-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.login-form h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.login-form .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.login-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.login-form .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.login-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.login-form a {
+    color: #007bff;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+.login-form .form-check-input {
+    margin-top: 0.3em;
+}
+
+
+/* Book list CSS */
+.book-list-section {
+    padding: 60px 0;
+}
+
+.book-list-section h2 {
+    color: #fc0606;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: #343a40;
+    color: #fff;
+    border-color: #454d55;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+    background-color: rgb(206, 248, 248) ;
+}
+
+
+/* Book display CSS */
+.book-display-section {
+    padding: 60px 0;
+    background-color: #fd5ada;
+    width: 500px;
+    margin: auto;
+}
+
+.book-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f7f1f1;
+    margin-bottom: 20px;
+}
+
+.book-author,
+.book-isbn,
+.book-year {
+    font-size: 1.2rem;
+    color: #f3eeee;
+    margin-bottom: 10px;
+}
+
+.book-description {
+    font-size: 1.1rem;
+    color: #f3eeee;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.btn-lg {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .book-title {
+        font-size: 2rem;
+    }
+
+    .book-author,
+    .book-isbn,
+    .book-year {
+        font-size: 1rem;
+    }
+
+    .book-description {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn-lg.ms-3 {
+        margin-left: 0 !important;
+    }
+}
+
+
+/* DELETE BOOK CSS */
+.delete-book-section {
+    padding: 60px 0;
+}
+
+.delete-book-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.delete-book-card h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.del {
+    background-color: #dc3545;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-outline-secondary {
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .delete-book-card {
+        padding: 20px;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

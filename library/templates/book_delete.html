@@ -1,0 +1,28 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block 'main' %}
+<!-- Delete Book Section -->
+<section class="delete-book-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="delete-book-card shadow-lg p-4 bg-white rounded">
+                    <h2 class="text-center mb-4">Delete Book</h2>
+                    <!-- Warning Message -->
+                    <div class="alert alert-danger" role="alert">
+                        <strong>Warning!</strong> Are you sure you want to delete <i>{{ book.title }}</i> book? This action cannot be undone.
+                    </div>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                            <button type="submit" class="btn btn-danger btn-lg del">Delete</button>
+                            <a href="{% url 'book-list-html' %}"><button type="button" class="btn btn-outline-secondary btn-lg">Cancel</button></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+{% endblock 'main' %}

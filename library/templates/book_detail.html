@@ -1,0 +1,27 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block 'main' %}
+
+<!-- Book Display Section -->
+<section class="book-display-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- Book Details -->
+            <center>
+                <div class="col-md-8">
+                    <h1 class="book-title">{{ book.title }}</h1>
+                    <p class="book-author"><strong>Author:</strong>{{ book.author }}</p>
+                    <p class="book-isbn"><strong>ISBN:</strong>{{ book.isbn }}</p>
+                    <p class="book-year"><strong>Publication Year:</strong>{{ book.published_date }}</p>
+                    <div class="mt-4">
+                        <a href="{% url 'book-list-html' %}" class="btn btn-primary btn-lg">Back to List</a>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+</section>
+
+
+{% endblock 'main' %}
