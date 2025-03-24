@@ -1,4 +1,4 @@
-# Django REST API Project
+# Django REST API Project - Library Management
 
 This is a Django REST Framework-based API for managing library.
 
